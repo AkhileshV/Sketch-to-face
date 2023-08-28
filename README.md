@@ -5,14 +5,18 @@ Paper link: https://arxiv.org/abs/2008.00951
 Official Repo Link: https://github.com/eladrich/pixel2style2pixel
 
 System requirements:
+
 OS: Linux/Mac OS
+
 Software requirements: python3.5+, OpenCV, scikit-learn, numpy
+
 Ninja compiler needs to be installed
+
 Hardware used for training: Google Colab with 15 GB GPU – Nvidia Tesla T4.
 
 CelebAHQdataset: [Kaggle Link](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)
 
-The important contribution of the team is the script to generate synthetic sketch images using python and OpenCV. 
+The **important contribution** of the team is the script to **generate synthetic sketch images** using python and OpenCV. 
 The Code for reference is in scripts/pencil_sketch_create_dataset.py
 
 To run training/testing on CelebAHQ dataset using Google Colab follow the steps mentioned in the below link:
@@ -39,12 +43,12 @@ python scripts/train.py \
 --input_nc=1 
 
 Model: 
-![alt text](https://drive.google.com/file/d/1s4rNECKwf56PqMfrptTJz1aQ_wK5YBhv/view?usp=sharing)
+
+![Screenshot (29)](https://github.com/AkhileshV/Sketch-to-face/assets/35297458/69654538-941a-4d7b-9cdf-d3ef3707a7ac)
 
 Results for the given input:
-![alt text](https://drive.google.com/file/d/1RJrNXedMoIJI4P0cBD_HZradeHDpGcx4/view?usp=sharing)
 
-
+![Screenshot (30)](https://github.com/AkhileshV/Sketch-to-face/assets/35297458/7db17f55-123c-49d3-b9d0-35dda769728d)
 
 
 
