@@ -20,10 +20,11 @@
     Hardware used for training: Google Colab with 15 GB GPU – Nvidia Tesla T4.
 
 **CelebAHQdataset**: [Kaggle Link](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)
+
 **The above dataset does not contain hand sketched images**
 
 ## The **important contribution** of the team is the script to **generate synthetic sketch images** using python and OpenCV. 
-The Code for reference is in scripts/pencil_sketch_create_dataset.py
+The Code for reference is in [scripts/pencil_sketch_create_dataset.py](https://github.com/AkhileshV/Sketch-to-face/scripts/pencil_sketch_create_dataset.py)
 
 ## Steps to prepare dataset:
     1. Download CelebAHQ dataset
@@ -32,7 +33,7 @@ The Code for reference is in scripts/pencil_sketch_create_dataset.py
     4. Replace these paths in the paths_config.py file
 
 
-**To run training/testing on CelebAHQ dataset using Google Colab follow the steps mentioned in the below link:**
+## To run training/testing on CelebAHQ dataset using Google Colab follow the steps mentioned in the below link:
 https://colab.research.google.com/drive/1YYNC-yscl2AA6nNJg7k35Re5b51g4jni?usp=sharing 
 
 **Training command for SketchtoFace Encoder:**
@@ -55,11 +56,11 @@ python scripts/train.py \
 --label_nc=1 \
 --input_nc=1 
 
-Model: 
+## Model: 
 
 ![Screenshot (29)](https://github.com/AkhileshV/Sketch-to-face/assets/35297458/69654538-941a-4d7b-9cdf-d3ef3707a7ac)
 
-Results for the given input:
+## Results for the given input:
 
 ![Screenshot (30)](https://github.com/AkhileshV/Sketch-to-face/assets/35297458/7db17f55-123c-49d3-b9d0-35dda769728d)
 
