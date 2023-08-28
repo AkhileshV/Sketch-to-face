@@ -1,4 +1,5 @@
 # Sketch-to-face
+
 **This project leverages the power of deep Generative Adversarial Networks to convert a hand sketched face into a real human face**
 
 **Paper link**: https://arxiv.org/abs/2008.00951
@@ -6,20 +7,32 @@
 
 **System requirements**:
 
-OS: Linux/Mac OS
+    OS: Linux/Mac OS
 
-Software requirements: python3.5+, OpenCV, scikit-learn, numpy
+    Software requirements: python3.5+, OpenCV, scikit-learn, numpy
 
-Ninja compiler needs to be installed
+    **Ninja compiler needs to be installed**
+    Steps:
+        !wget https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip
+        !sudo unzip ninja-linux.zip -d /usr/local/bin/
+        !sudo update-alternatives --install /usr/bin/ninja ninja /usr/local/bin/ninja 1 --force 
 
-Hardware used for training: Google Colab with 15 GB GPU – Nvidia Tesla T4.
+    Hardware used for training: Google Colab with 15 GB GPU – Nvidia Tesla T4.
 
 **CelebAHQdataset**: [Kaggle Link](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)
+**The above dataset does not contain hand sketched images**
 
-The **important contribution** of the team is the script to **generate synthetic sketch images** using python and OpenCV. 
+## The **important contribution** of the team is the script to **generate synthetic sketch images** using python and OpenCV. 
 The Code for reference is in scripts/pencil_sketch_create_dataset.py
 
-To run training/testing on CelebAHQ dataset using Google Colab follow the steps mentioned in the below link:
+## Steps to prepare dataset:
+    1. Download CelebAHQ dataset
+    2. Use the pencil_sketch_create_dataset.py script to generate synthetic sketch images.
+    3. Split both images and sketches into train, test and val and create separate folders for individual splits
+    4. Replace these paths in the paths_config.py file
+
+
+**To run training/testing on CelebAHQ dataset using Google Colab follow the steps mentioned in the below link:**
 https://colab.research.google.com/drive/1YYNC-yscl2AA6nNJg7k35Re5b51g4jni?usp=sharing 
 
 **Training command for SketchtoFace Encoder:**
