@@ -39,10 +39,11 @@ python scripts/train.py \
 --input_nc=1 
 
 Model: 
+![alt text](https://drive.google.com/file/d/1s4rNECKwf56PqMfrptTJz1aQ_wK5YBhv/view?usp=sharing)
 
 Results for the given input:
-![Uploading Screenshot (29).png…]()
-![Uploading Screenshot (30).png…]()
+![alt text](https://drive.google.com/file/d/1RJrNXedMoIJI4P0cBD_HZradeHDpGcx4/view?usp=sharing)
+
 
 
 
