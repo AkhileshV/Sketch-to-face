@@ -1,10 +1,10 @@
 # Sketch-to-face
-This project leverages the power of deep Generative Adversarial Networks to convert a hand sketched face into a real human face
+**This project leverages the power of deep Generative Adversarial Networks to convert a hand sketched face into a real human face**
 
-Paper link: https://arxiv.org/abs/2008.00951
-Official Repo Link: https://github.com/eladrich/pixel2style2pixel
+**Paper link**: https://arxiv.org/abs/2008.00951
+**Official Repo Link**: https://github.com/eladrich/pixel2style2pixel
 
-System requirements:
+**System requirements**:
 
 OS: Linux/Mac OS
 
@@ -14,7 +14,7 @@ Ninja compiler needs to be installed
 
 Hardware used for training: Google Colab with 15 GB GPU – Nvidia Tesla T4.
 
-CelebAHQdataset: [Kaggle Link](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)
+**CelebAHQdataset**: [Kaggle Link](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)
 
 The **important contribution** of the team is the script to **generate synthetic sketch images** using python and OpenCV. 
 The Code for reference is in scripts/pencil_sketch_create_dataset.py
@@ -22,11 +22,11 @@ The Code for reference is in scripts/pencil_sketch_create_dataset.py
 To run training/testing on CelebAHQ dataset using Google Colab follow the steps mentioned in the below link:
 https://colab.research.google.com/drive/1YYNC-yscl2AA6nNJg7k35Re5b51g4jni?usp=sharing 
 
-Training command for SketchtoFace Encoder:
+**Training command for SketchtoFace Encoder:**
 python scripts/train.py \
 --dataset_type=celebs_sketch_to_face \
---exp_dir=/content/drive/MyDrive/EEE511/Nov14_CelebA_Retrain_270M \
---checkpoint_path=/content/drive/MyDrive/EEE511/Nov9_CelebA_Retrain_270M/checkpoints/best_model.pt \
+--exp_dir=/path/to/exp/dir \
+--checkpoint_path=/path/to/save/checkpoint.pt \
 --workers=4 \
 --batch_size=4 \
 --test_batch_size=4 \
