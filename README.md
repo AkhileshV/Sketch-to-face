@@ -58,7 +58,7 @@ python scripts/train.py \
 
 ## Model: 
 
-!([Model Archi](https://github.com/AkhileshV/Sketch-to-face/blob/master/docs/Screenshot%20(29).png))
+![Model Archi](https://github.com/AkhileshV/Sketch-to-face/blob/master/docs/Screenshot%20(29).png)
 
 ## Results for the given input:
 
