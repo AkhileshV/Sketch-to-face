@@ -58,11 +58,11 @@ python scripts/train.py \
 
 ## Model: 
 
-![Screenshot (29)](https://github.com/AkhileshV/Sketch-to-face/assets/35297458/69654538-941a-4d7b-9cdf-d3ef3707a7ac)
+!([Model Archi](https://github.com/AkhileshV/Sketch-to-face/blob/master/docs/Screenshot%20(29).png))
 
 ## Results for the given input:
 
-![Screenshot (30)](https://github.com/AkhileshV/Sketch-to-face/assets/35297458/7db17f55-123c-49d3-b9d0-35dda769728d)
+![output](https://github.com/AkhileshV/Sketch-to-face/blob/master/docs/Screenshot%20(30).png)
 
 
 
